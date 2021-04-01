@@ -5,8 +5,6 @@ Created on Wed Mar 31 21:05:39 2021
 @author: M.ABDELMOULA
 """
 
-
-
 from selenium import webdriver 
 from selenium.webdriver.common.keys import Keys 
 from selenium.common.exceptions import NoSuchElementException 
@@ -21,7 +19,7 @@ from selenium.common.exceptions import TimeoutException
 
 
 from tqdm import tqdm
-from IronTranslator.constants import LANGUAGES_CODES, LANGUAGES_NAMES, MAIN_LINK
+from constants import LANGUAGES_CODES, LANGUAGES_NAMES, MAIN_LINK
 
 
 class Translator:
@@ -40,12 +38,12 @@ class Translator:
             newurl = newurl + word +"%20"
         return url + newurl
         
-    def translate(self, texts, dest='en', src='auto', TimeLimit = 360, **kwargs):
+    def translate(self, texts, dest='en', src='auto', TimeLimit = 120, **kwargs):
         
         dest = dest.lower()
         src = src.lower()
         text_translated = []
-
+        MaxAttempts = 5
         
         if src != 'auto' and src not in LANGUAGES_CODES:
             if src in LANGUAGES_NAMES:
@@ -68,53 +66,21 @@ class Translator:
         for text in tqdm(texts, bar_format='{l_bar}{bar:50}{r_bar}{bar:-50b}'):
             sub_text = ""
             link = self.GetUrl(src, dest, text)
-            try: 
-                self.browser.get(link)
-                WebDriverWait(self.browser, TimeLimit).until(EC.presence_of_element_located(
-                    (By.XPATH, './/span[@data-language-for-alternatives = "{}"]'.format(dest))))
-                for elem in self.browser.find_elements_by_xpath('.//span[@data-language-for-alternatives = "{}"]'.format(dest)):
-                    sub_text = sub_text + elem.text
-                text_translated.append(sub_text) 
-            except :
-                raise ValueError('TimeoutException')
-                
+            attempts = 0
+            while attempts < MaxAttempts:
+                try: 
+                    self.browser.get(link)
+                    WebDriverWait(self.browser, TimeLimit).until(EC.presence_of_element_located(
+                        (By.XPATH, './/span[@data-language-for-alternatives = "{}"]'.format(dest))))
+                    for elem in self.browser.find_elements_by_xpath('.//span[@data-language-for-alternatives = "{}"]'.format(dest)):
+                        sub_text = sub_text + elem.text
+                    text_translated.append(sub_text) 
+                    break
+                except :
+                    attempts += 1
+                    self.browser.refresh()
+            if attempts == MaxAttempts: 
+                raise ValueError('TimeoutException : Maximum number of attempts is reached. Please check your internet connection')
         self.browser.quit()
                     
         return text_translated
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

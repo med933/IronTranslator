@@ -1,10 +1,9 @@
-===============================================================
 IronTranslator: Google translate API for Python
 ===============================================================
 
 |PyPI latest| |PyPI License| |Stars|
 
-----------
+
 1 - Installation
 ----------
 You can install it from PyPI.
@@ -14,13 +13,13 @@ You can install it from PyPI.
    $ pip install IronTranslator
 
 ..
-----------
+
 2 - How to use IronTranslator ?
 ----------
 
 First you have to download the latest version of `ChromeDriver <https://chromedriver.chromium.org/>`_. Save the download file in the directory of your choice.
 
-...........
+
 On Windows
 ...........
 
@@ -28,14 +27,14 @@ On Windows
 
     >>> YourChromeDriverPath = r"C:\Users\chromedriver"
     
-...........
+
 On Mac
 ...........
 
 .. code:: python
 
     >>> YourChromeDriverPath = "/Users/chromedriver"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Single sentence translation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -47,7 +46,7 @@ Single sentence translation
     100%|██████████████████████████████████████████████████| 1/1 [00:05<00:00,  0.70/it]
     ['안녕하세요']
     
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Multiple sentence translation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

@@ -7,9 +7,7 @@ IronTranslator: Google translate API for Python
 ----------
 Installation
 ----------
-You can install it from PyPI. Use the package manager [pip](https://pip.pypa.io/en/stable/) to install 
-IronTranslator:
-
+You can install it from PyPI.
 .. sourcecode:: bash
 
    $ pip install IronTranslator

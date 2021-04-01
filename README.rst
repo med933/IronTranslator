@@ -22,7 +22,7 @@ First you have to download the latest version of `ChromeDriver <https://chromedr
 
 
 On Windows
-.......
+
 
 .. code:: python
 
@@ -30,7 +30,7 @@ On Windows
     
 
 On Mac
-.......
+
 
 .. code:: python
 

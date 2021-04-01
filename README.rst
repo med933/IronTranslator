@@ -75,4 +75,5 @@ We can specify the source language
 
 .. |PyPI latest| image:: https://badge.fury.io/py/IronTranslator.svg
    :target: https://pypi.org/project/IronTranslator
-   
+.. |PyPI License| image:: https://img.shields.io/pypi/l/IronTranslator  
+   :target: https://github.com/med933/IronTranslator/blob/main/LICENSE

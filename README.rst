@@ -1,5 +1,5 @@
 IronTranslator: Google translate API for Python
-===============================================================
+===========
 
 |PyPI latest| |PyPI License| |Stars|
 

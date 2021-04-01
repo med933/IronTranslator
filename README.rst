@@ -14,15 +14,12 @@ You can install it from PyPI.
 
    $ pip install IronTranslator
 
-
 2 - How to use IronTranslator ?
 ----------
 
 First you have to download the latest version of `ChromeDriver <https://chromedriver.chromium.org/>`_. Save the download file in the directory of your choice.
 
-
 On Windows
-
 
 .. code:: python
 
@@ -31,14 +28,12 @@ On Windows
 
 On Mac
 
-
 .. code:: python
 
     >>> YourChromeDriverPath = "/Users/chromedriver"
 
 Single sentence translation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 .. code:: python
 
@@ -48,7 +43,6 @@ Single sentence translation
     100%|██████████████████████████████████████████████████| 1/1 [00:05<00:00,  0.70/it]
     ['안녕하세요']
     
-
 Multiple sentence translation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -63,7 +57,6 @@ Multiple sentence translation
  
 We can specify the source language 
 
-
 .. code:: python
 
    >>> from IronTranslator import Translator
@@ -73,9 +66,6 @@ We can specify the source language
    100%|██████████████████████████████████████████████████| 3/3 [00:05<00:00,  1.69s/it]
    ['Amo al Real Madrid.','La gravedad en la superficie de la luna es de 1.622 m / s2.','¿Cuál es la velocidad de la luz en un vacío?']
   
-  
-   
-
 .. |PyPI latest| image:: https://badge.fury.io/py/IronTranslator.svg
    :target: https://pypi.org/project/IronTranslator
 .. |PyPI License| image:: https://img.shields.io/pypi/l/IronTranslator  

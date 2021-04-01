@@ -8,7 +8,7 @@ Compatible with Python 3.6+.
 1 - Installation
 ----------------
 
-You can install it from PyPI.
+You can install it from `PyPI <https://pypi.org/project/IronTranslator/>`_.
 
 .. code:: bash
 

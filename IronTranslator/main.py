@@ -21,7 +21,7 @@ from selenium.common.exceptions import TimeoutException
 
 
 from tqdm import tqdm
-from IronTranslator.constants import LANGUAGES_CODES, LANGUAGES_NAMES, MAIN_LINK
+from constants import LANGUAGES_CODES, LANGUAGES_NAMES, MAIN_LINK
 
 
 class Translator:

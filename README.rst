@@ -19,9 +19,9 @@ You can install it from PyPI.
 
 First you have to download the latest version of `ChromeDriver <https://chromedriver.chromium.org/>`_. Save the download file in the directory of your choice.
 
----
+=====
 On Windows
----
+=====
 
 .. code:: python
 

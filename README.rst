@@ -2,12 +2,13 @@
 IronTranslator: Google translate API for Python
 ===============================================================
 
-|PyPI Versio|
+|PyPI latest|
 
 ----------
 1 - Installation
 ----------
 You can install it from PyPI.
+
 .. sourcecode:: bash
 
    $ pip install IronTranslator
@@ -19,17 +20,17 @@ You can install it from PyPI.
 
 First you have to download the latest version of `ChromeDriver <https://chromedriver.chromium.org/>`_. Save the download file in the directory of your choice.
 
-=====
+...........
 On Windows
-=====
+...........
 
 .. code:: python
 
     >>> YourChromeDriverPath = r"C:\Users\chromedriver"
     
----
+...........
 On Mac
----
+...........
 
 .. code:: python
 
@@ -43,6 +44,7 @@ Single sentence translation
     >>> from IronTranslator import Translator
     >>> translator = Translator(ChromeDriverPath = YourChromeDriverPath)
     >>> translator.translate(texts=["bonjour"], dest='ko')
+    100%|██████████████████████████████████████████████████| 1/1 [00:05<00:00,  0.70/it]
     ['안녕하세요']
     
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -70,6 +72,7 @@ We can specify the source language
    ['Amo al Real Madrid.','La gravedad en la superficie de la luna es de 1.622 m / s2.','¿Cuál es la velocidad de la luz en un vacío?']
    
    
-   
-   
+
+.. |PyPI latest| image:: https://badge.fury.io/py/IronTranslator.svg
+   :target: https://pypi.org/project/IronTranslator
    

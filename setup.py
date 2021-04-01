@@ -10,7 +10,7 @@ import os.path
 import re
 from setuptools import find_packages, setup
 
-VERSION = '0.0.14'
+VERSION = '0.0.16'
 DESCRIPTION = 'Google traduction'
 LONG_DESCRIPTION = 'A package that allows to translate text.'
 
@@ -35,7 +35,7 @@ setup(
     author="Abdelmoula",
     author_email="abdelmoula.m93@gmail.com",
     description=DESCRIPTION,
-    long_description_content_type='text/markdown',
+    long_description_content_type='text/x-rst',
     packages=find_packages(),
     long_description=get_readme(),
     install_requires=['selenium','tqdm'],
@@ -52,7 +52,7 @@ setup(
                  'Programming Language :: Python',
                  'Programming Language :: Python :: 3.6',
                  'Programming Language :: Python :: 3.7',
-                 'Programming Language :: Python :: 3.8']
+                 'Programming Language :: Python :: 3.8'],
 )
 
 

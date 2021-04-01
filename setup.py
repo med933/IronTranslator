@@ -10,7 +10,7 @@ import os
 import re
 from setuptools import find_packages, setup
 
-VERSION = '0.0.4'
+VERSION = '0.0.6'
 DESCRIPTION = 'Google traduction'
 LONG_DESCRIPTION = 'A package that allows to translate text.'
 
@@ -26,7 +26,7 @@ setup(
     long_description=LONG_DESCRIPTION,
     packages=find_packages(),
     install_requires=['selenium','tqdm'],
-    keywords=['python', 'Google traduction', 'traduction', 'nlp', 'Google'],
+    keywords=['python', 'Google traduction', 'traduction', 'nlp', 'Google', 'translate'],
     url='https://github.com/med933/IronTranslator',
     classifiers=['Development Status :: 5 - Production/Stable',
                  'Intended Audience :: Education',

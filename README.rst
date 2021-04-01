@@ -25,7 +25,6 @@ On Windows
 
     >>> YourChromeDriverPath = r"C:\Users\chromedriver"
     
-
 On Mac
 
 .. code:: python

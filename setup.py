@@ -10,7 +10,7 @@ import os.path
 import re
 from setuptools import find_packages, setup
 
-VERSION = '0.1.2'
+VERSION = '0.1.3'
 DESCRIPTION = 'Google traduction'
 LONG_DESCRIPTION = 'A package that allows to translate text.'
 

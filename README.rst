@@ -3,7 +3,7 @@ IronTranslator: Google translate API for Python
 
 |PyPI latest| |PyPI License| |Stars|
 
-IronTranslator is a simple tool to translate words or paragraphs with lengths less than 5000 words. IronTranslator may help you to do multiple tasks in nlp machine learning projects (in ordre to use GloVe or FastText)
+IronTranslator is a simple tool to translate words or paragraphs with lengths less than 5000 words. IronTranslator may help you to do multiple tasks in nlp machine learning projects (in ordre to use GloVe or FastText).
 
 Compatible with Python 3.6+.
 

@@ -27,12 +27,18 @@ setup(
     packages=find_packages(),
     install_requires=['selenium', 'pandas', 'BeautifulSoup','tqdm'],
     keywords=['python', 'Google traduction', 'traduction', 'nlp', 'Google'],
-    classifiers=[
-        "Development Status :: 1 - Planning",
-        "Intended Audience :: Developers",
-        "Programming Language :: Python :: 3",
-        "Operating System :: Unix",
-        "Operating System :: MacOS :: MacOS X",
-        "Operating System :: Microsoft :: Windows",
-    ]
+    url='https://github.com/med933/IronTranslator',
+    classifiers=['Development Status :: 5 - Production/Stable',
+                 'Intended Audience :: Education',
+                 'Intended Audience :: End Users/Desktop',
+                 'License :: Freeware',
+                 'Operating System :: POSIX',
+                 'Operating System :: Microsoft :: Windows',
+                 'Operating System :: MacOS :: MacOS X',
+                 'Topic :: Education',
+                 'Programming Language :: Python',
+                 'Programming Language :: Python :: 3.6',
+                 'Programming Language :: Python :: 3.7',
+                 'Programming Language :: Python :: 3.8'
+                 'Programming Language :: Python :: 3.9'],
 )

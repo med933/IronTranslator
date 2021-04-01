@@ -77,6 +77,8 @@ class Translator:
                 text_translated.append(sub_text) 
             except :
                 raise ValueError('TimeoutException')
+                
+        self.browser.quit()
                     
         return text_translated
     

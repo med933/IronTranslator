@@ -1,12 +1,12 @@
 IronTranslator: Google translate API for Python
-===========
+===============================================
 
 |PyPI latest| |PyPI License| |Stars|
 
 Compatible with Python 3.6+.
 
 1 - Installation
-----------
+----------------
 
 You can install it from PyPI.
 
@@ -15,7 +15,7 @@ You can install it from PyPI.
    $ pip install IronTranslator
 
 2 - How to use IronTranslator ?
-----------
+-------------------------------
 
 First you have to download the latest version of `ChromeDriver <https://chromedriver.chromium.org/>`_. Save the download file in the directory of your choice.
 

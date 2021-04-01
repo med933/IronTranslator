@@ -2,7 +2,7 @@
 IronTranslator: Google translate API for Python
 ===============================================================
 
-|PyPI latest|
+|PyPI latest| |PyPI License| |Stars|
 
 ----------
 1 - Installation
@@ -77,3 +77,5 @@ We can specify the source language
    :target: https://pypi.org/project/IronTranslator
 .. |PyPI License| image:: https://img.shields.io/pypi/l/IronTranslator  
    :target: https://github.com/med933/IronTranslator/blob/main/LICENSE
+.. |Stars| image:: https://img.shields.io/github/stars/med933/IronTranslator  
+   :target: https://pypi.org/project/IronTranslator

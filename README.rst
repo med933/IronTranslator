@@ -13,3 +13,6 @@ You can install it from PyPI.
    $ pip install IronTranslator
 
 ..
+----------
+How to use IronTranslator ?
+----------
